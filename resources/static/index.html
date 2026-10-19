@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SmartSuperMarket</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<aside class="side">
+  <h1>SmartSuperMarket</h1>
+  <nav id="nav" aria-label="Sections">
+    <button data-view="dashboard" class="on">Dashboard</button>
+    <button data-view="orders">Orders</button>
+    <button data-view="products">Products</button>
+    <button data-view="categories">Categories</button>
+    <button data-view="suppliers">Suppliers</button>
+    <button data-view="customers">Customers</button>
+  </nav>
+</aside>
+<main>
+  <header class="bar"><h2 id="title"></h2><button id="addBtn" class="primary" hidden></button></header>
+  <section id="view"></section>
+</main>
+<dialog id="dlg">
+  <form id="form" method="dialog">
+    <h2></h2>
+    <div class="body"></div>
+    <div class="actions">
+      <button type="button" id="cancel">Cancel</button>
+      <button type="submit" class="primary">Save</button>
+    </div>
+  </form>
+</dialog>
+<div id="toast" role="alert" hidden></div>
+<script src="js/app.js"></script>
+</body>
+</html>
